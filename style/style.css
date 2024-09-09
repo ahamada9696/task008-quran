@@ -1,0 +1,518 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* start header section /////////////////////////////////////////////////// */
+header{
+    height: 11vh;
+    background-color: rgba(0, 0, 0, 0.767);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header a:nth-of-type(1) img{
+    width: 60px;
+    height: 50px;
+    transition: .2s;
+}
+header a:nth-of-type(1) img:hover{
+    transform: scale(1.05);
+}
+header a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.842);
+    margin: 25px;
+    font-family: monospace;
+    font-size: 20px;
+    transition: .2s;
+    letter-spacing: 1px;
+}
+header a:hover{
+    color: white;
+}
+/* end header section /////////////////////////////////////////////////// */
+
+
+/* start hero section /////////////////////////////////////////////////////////////////////// */
+main{
+    width: 100%;
+    height: 180vh;
+    margin-top: 11vh;
+    /* background: darkgray; */
+    background: linear-gradient(to bottom,#f75e7aaf,#3e54ffaf) ,url(../images/1648251.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main div{
+    width: 80%;
+    height: 80vh;
+    /* border: 2px solid whitesmoke; */
+}
+
+/*first flyer  *************/
+main div:nth-of-type(1) img{
+    width: 45%;
+    height: 90%;
+    box-shadow: 1px 1px 10px 2px rgba(255, 255, 255, 0.671);
+    border-radius: 10px;
+    
+}
+.first-flyer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.first-flyer div{
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.first-flyer div h2{
+    font-family: monospace;
+    font-size: 70px;
+    /* color: #3e56ff; */
+    color: rgb(248, 248, 252);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.first-flyer div p{
+    color: rgba(233, 224, 224, 0.781);
+    font-family: monospace;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+.first-flyer div button{
+    /* width: 25%;
+    height: 7vh; */
+    padding: 15px 30px;
+    background-color:#3e56ff ;
+    color: white;
+    font-family: monospace;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    transition: .2s;
+    text-transform: capitalize;
+}
+.first-flyer div button:hover{
+    background-color: white;
+    color: #3e56ff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* second flyer *********** */
+.second-flyer{
+    margin-top: 10vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f75e7a;
+    box-shadow: 0px 0px 12px -2px rgba(255, 255, 255, 0.671);
+    border-radius: 10px;
+}
+.second-flyer h2{
+    font-size: 50px;
+    font-family: monospace;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+}
+.second-flyer p{
+    font-family: monospace;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.815);
+    line-height: 25px;
+}
+.second-flyer button{
+    padding: 15px 30px;
+    background-color:#3e56ff ;
+    color: white;
+    font-family: monospace;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    transition: .2s;
+    text-transform: capitalize;
+}
+.second-flyer button:hover{
+    background-color: white;
+    color: #3e56ff;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* end hero section /////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* start marketing section /////////////////////////////////////////////////////////////////////////////// */
+.marketing{
+    height: 100vh;
+    /* background: green; */
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.76),rgba(255, 255, 255, 0.822)),url(../images/islam-ahlulbayt-coran-big.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    /* margin-top: 0vh; */
+}
+/* .marketing img{
+    display: inline-block;
+    width: 25%;
+    height: 15vh;
+    position: absolute;
+    top: 5vh;
+    left: 10%;
+
+} */
+.marketing div:nth-of-type(1){
+    width: 40%;
+    height: 95vh;
+    padding: 30px 10px 30px 70px;
+    margin: 10px;
+    border-radius: 10px;
+    background: #f75e7a;
+    position: absolute;
+    right: 10%;
+    top: 0vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.marketing div:nth-of-type(1) h3{
+    font-family: monospace;
+    font-size: 50px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: white;
+}
+.marketing div:nth-of-type(1) p{
+    font-family: monospace;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color: white;
+    text-transform: capitalize;
+}
+.marketing div:nth-of-type(1) button{
+    padding: 15px 30px;
+    background-color:#3e56ff ;
+    color: white;
+    font-family: monospace;
+    font-size: 16px;
+    border-radius: 30px;
+    transition: .2s;
+    text-transform: capitalize;
+}
+.marketing div:nth-of-type(1) button:hover{
+    background-color: white;
+    color: #3e56ff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.marketing div:nth-of-type(2){
+    width: 35%;
+    height: 65vh;
+
+    position: absolute;
+    transform: translate(50%, 25%);
+    
+}
+.marketing div:nth-of-type(2) img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px black;
+
+}
+.marketing div:nth-of-type(2) h3{
+    font-family: monospace;
+    font-size: 50px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: white;
+}
+
+/* end marketing section /////////////////////////////////////////////////////////////////////////////// */
+
+/* staert sunnah section ////////////////////////////////////////////////////////////////////////////////// */
+.sunnah{
+    background: linear-gradient(rgba(0, 0, 0, 0.74),rgba(128, 128, 128, 0.658)),url(../images/islamic-background-52650-311421.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sunnah div:nth-of-type(1){
+    left: 10%;
+    padding-left: 30px;
+    padding-right: 7.5rem;
+}
+.sunnah div:nth-of-type(2){
+    transform: translate(130%, 25%);
+}
+/* end sunnah section ////////////////////////////////////////////////////////////////////////////////// */
+/* button//////////// */
+button{
+    border: navajowhite;
+}
+/* button//////////// */
+
+
+/* start team section *********************************************************************************** */
+.team{
+    width: 100%;
+    height: 100vh;
+    /* background: rgba(0, 0, 0, 0.89); */
+    /* background-color: #008498; */
+    /* background: linear-gradient(rgba(3, 0, 0, 0.911),rgb(117, 113, 113),white); */
+    background: linear-gradient(to top,#008498ec,#00aac0f6);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.team h2{
+    font-family: monospace;
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: white;
+    text-transform: capitalize;
+}
+/* .team h2::after{
+    width: 100%;
+    height: 15px;
+    background-color: darkorange;
+    position: absolute;
+    bottom: 0;
+} */
+
+.team p{
+    font-family: monospace;
+    font-size: 18px;
+    list-style: 1px;
+    color: white;
+}
+.team div{
+    width: 100%;
+    height: 70vh;
+    /* border: 2px solid darkblue; */
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.team div div {
+    width: 22%;
+    height: 98%;
+    /* border: 2px solid darkgrey; */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.938);
+    border-radius: 10px;
+    text-transform: capitalize;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: .2s;
+}
+.team div div:hover{
+    transform: scale(1.05);
+}
+.team div div img{
+    width: 65%;
+    height: 40%;
+    border-radius: 50%;
+    transition: 1s;
+
+}
+.team div div img:hover{
+    /* transform: rotateY(180deg); */
+}
+.team div div h3{
+    font-family: monospace;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.team div div p{
+    font-family: monospace;
+    color: rgba(0, 0, 0, 0.877);
+    font-size: 16px;
+}
+.team div div a{
+    text-decoration: none;
+    font-family: monospace;
+    color: #3e56ff;
+
+}
+.team div div a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.team div div button{
+    padding: 10px 30px;
+    font-family: monospace;
+    text-transform: capitalize;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    transition: .2s;
+}
+.team div div button:hover{
+    background-color: white;
+    color: black;
+    outline: 1px solid black;
+    cursor: pointer;
+}
+
+/* end team section *********************************************************************************** */
+
+/* sy=tart footer ************************************************************************************* */
+footer{
+    width: 100%;
+    height: 80vh;
+    /* background: linear-gradient(rgba(116, 2, 2, 0.637),rgba(175, 172, 5, 0.658),rgba(0, 0, 0, 0.61)),url(../images/Fanous_Ramadan.jpg); */
+    /* background: rgb(0, 0, 0) url(../images/Fanous_Ramadan.jpg); */
+    background: linear-gradient(rgba(0, 0, 0, 0.534),rgba(0, 0, 0, 0.596)),url(../images/Fanous_Ramadan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  
+}
+footer div:nth-of-type(1) h3{
+    font-family: monospace;
+    font-size: 30px;
+padding: 50px;   
+color: white;
+margin-top: 10vh;
+ /* background-color: #3e56ff; */
+ text-transform: capitalize;
+ list-style: 1px;
+
+}
+footer h3::first-letter{
+    font-size: 70px;
+    color: red;
+}
+footer img{
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%
+}
+footer form{
+    width: 80%;
+    /* height: 30vh; */
+    display: block;
+    margin: auto;
+    transform: translate(0%,15%);
+}
+footer form input{
+    width: 90%;
+    height: 6vh;
+    padding: 15px;
+    border: none;
+    border: none;
+    outline: 1px solid white;
+    border-radius: 14px;
+    margin: 10px;
+}
+footer form input:nth-of-type(4){
+    width: 30%;
+    padding: 10px 10px ;
+    font-family: monospace;
+    font-weight: bold;
+    transition: .2s;
+    /* outline: 1px solid black;/ */
+}
+footer form input:nth-of-type(4):hover{
+/* background-color: black; */
+background-color: #194c64;
+color: white;
+border: none;
+cursor: pointer;
+/* outline: 1px solid white; */
+}
+footer P{
+    position: absolute;
+    bottom: 0;
+    background: darkgoldenrod;
+    font-family: monospace;
+    font-size: 15px;
+    color: white;
+    width: 100%;
+}
+footer div:nth-of-type(1){
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid; */
+    /* display: inline-block; */
+}
+footer div:nth-of-type(1) a{
+    margin:20px 10px;
+}
+footer div:nth-of-type(2){
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid; */
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+footer div:nth-of-type(3){
+    width: 30%;
+    /* border: 2px solid ; */
+}
+footer div:nth-of-type(3) h3{
+    font-size: 18px;
+    font-family: monospace;
+    color: white;
+    line-height: 35px;
+    /* position: absolute; */
+}
+footer div:nth-of-type(3) h3::first-letter{
+    font-size: 70px;
+}
+footer div:nth-of-type(3) p{
+    /* position: absolute; */
+    font-size: 10px;
+    color: white;
+}
+/* end footer ************************************************************************************* */
